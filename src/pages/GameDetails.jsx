@@ -30,7 +30,7 @@ function GameDetail() {
       <img
         src={game.imageUrl}
         alt={game.title}
-        className="mx-auto mb-8 max-w-xl rounded-lg shadow-lg"
+        className="w-full max-w-xl mx-auto mb-8 rounded-lg shadow-lg"
       />
 
       {/* Descripción del juego */}
