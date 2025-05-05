@@ -112,7 +112,7 @@ function GameDetail() {
                 <li className="flex items-start space-x-3">
                     <CubeTransparentIcon  className="h-5 w-5 text-blue-500" />
                     <span className="font-bold">GPU:</span>
-                    <span>{game.minRequirements.gpu}</span>
+                    <span>{game.recommendedRequirements.gpu}</span>
                 </li>
                 <li className="flex items-start space-x-3">
                     <ServerIcon className="h-5 w-5 text-blue-500" />
