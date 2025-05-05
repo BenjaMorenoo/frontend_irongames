@@ -12,7 +12,8 @@ function GameDetail() {
   const [game, setGame] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/games/${id}`)
+    /*fetch(`http://localhost:5000/api/games/${id}`)*/
+    fetch(`https://backend-irongames.onrender.com/api/games/${id}`)
       .then((res) => res.json())
       .then((data) => setGame(data))
       .catch((err) => console.error("Error cargando juego:", err));

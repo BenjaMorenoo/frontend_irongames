@@ -8,7 +8,8 @@ function Home() {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/games")
+    /*fetch("http://localhost:5000/api/games")*/
+    fetch("https://backend-irongames.onrender.com/api/games")
       .then((res) => res.json())
       .then((data) => setGames(data));
   }, []);
