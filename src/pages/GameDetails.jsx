@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 // Importamos los íconos de Heroicons
-import { CpuChipIcon, ServerIcon, DevicePhoneMobileIcon , ComputerDesktopIcon , ArrowDownCircleIcon, WifiIcon  } from "@heroicons/react/24/outline";
+import { CpuChipIcon, ServerIcon, DevicePhoneMobileIcon , ComputerDesktopIcon , ArrowDownCircleIcon, WifiIcon, CubeTransparentIcon   } from "@heroicons/react/24/outline";
 
 
 
@@ -71,6 +71,11 @@ function GameDetail() {
                     <span>{game.minRequirements.processor}</span>
                 </li>
                 <li className="flex items-start space-x-3">
+                    <CubeTransparentIcon  className="h-5 w-5 text-blue-500" />
+                    <span className="font-bold">GPU:</span>
+                    <span>{game.minRequirements.gpu}</span>
+                </li>
+                <li className="flex items-start space-x-3">
                     <ServerIcon className="h-5 w-5 text-blue-500" />
                     <span className="font-bold">Memoria:</span>
                     <span>{game.minRequirements.ram}</span>
@@ -103,6 +108,11 @@ function GameDetail() {
                     <CpuChipIcon className="h-5 w-5 text-blue-500" />
                     <span className="font-bold">Procesador:</span>
                     <span>{game.recommendedRequirements.processor}</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                    <CubeTransparentIcon  className="h-5 w-5 text-blue-500" />
+                    <span className="font-bold">GPU:</span>
+                    <span>{game.minRequirements.gpu}</span>
                 </li>
                 <li className="flex items-start space-x-3">
                     <ServerIcon className="h-5 w-5 text-blue-500" />
